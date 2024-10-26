@@ -78,9 +78,9 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 #### Path: `api/README.md`
 
 ```markdown
-# Final Project Backend
+# Final Project Frontend
 
-This is the backend API for the Final Project, built with Node.js and Express, connected to MongoDB, and deployed on Vercel. The API supports user authentication and CRUD operations for posts.
+This is the frontend for the Final Project, built with React and deployed on Vercel. The application allows users to create, edit, and view posts, with data provided by the backend API.
 
 ## Table of Contents
 - [Features](#features)
@@ -88,33 +88,26 @@ This is the backend API for the Final Project, built with Node.js and Express, c
 - [Environment Variables](#environment-variables)
 - [Getting Started](#getting-started)
 - [Available Scripts](#available-scripts)
-- [API Endpoints](#api-endpoints)
 - [Deployment](#deployment)
 
 ## Features
-- User authentication (register, login, logout)
-- CRUD operations for posts
-- JWT-based authentication
-- Data validation with Mongoose
+- User authentication (login and registration)
+- CRUD operations for posts (create, edit, delete, view)
+- Responsive design with styled components
+- Integration with backend API
 
 ## Tech Stack
-- **Backend**: Node.js, Express, Mongoose (MongoDB)
-- **Authentication**: JWT (JSON Web Token)
+- **Frontend**: React, React Router, React Quill (for rich text editing)
 - **Deployment**: Vercel
 
 ## Environment Variables
 
-To run this project, you need to set the following environment variables:
+To run this project, you need to set the following environment variable:
 
-| Variable Name  | Description                                |
-|----------------|--------------------------------------------|
-| `MONGO_URI`    | MongoDB connection string                  |
-| `JWT_SECRET`   | Secret key for signing JWTs                |
+| Variable Name       | Description                             |
+|---------------------|-----------------------------------------|
+| `REACT_APP_API_URL` | URL of the backend API                 |
 
-Example `.env` file:
+For example, in your `.env` file:
 ```plaintext
-MONGO_URI=mongodb+srv://username:password@cluster.mongodb.net/dbname?retryWrites=true&w=majority
-JWT_SECRET=your-secret-key
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
->>>>>>> b804938 (Initial Commit)
+REACT_APP_API_URL=https://final-project-backend-ed7a.vercel.app/
