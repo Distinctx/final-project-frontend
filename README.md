@@ -70,5 +70,51 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 ### `yarn build` fails to minify
 
+
+---
+
+### Backend `README.md`
+
+#### Path: `api/README.md`
+
+```markdown
+# Final Project Backend
+
+This is the backend API for the Final Project, built with Node.js and Express, connected to MongoDB, and deployed on Vercel. The API supports user authentication and CRUD operations for posts.
+
+## Table of Contents
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Environment Variables](#environment-variables)
+- [Getting Started](#getting-started)
+- [Available Scripts](#available-scripts)
+- [API Endpoints](#api-endpoints)
+- [Deployment](#deployment)
+
+## Features
+- User authentication (register, login, logout)
+- CRUD operations for posts
+- JWT-based authentication
+- Data validation with Mongoose
+
+## Tech Stack
+- **Backend**: Node.js, Express, Mongoose (MongoDB)
+- **Authentication**: JWT (JSON Web Token)
+- **Deployment**: Vercel
+
+## Environment Variables
+
+To run this project, you need to set the following environment variables:
+
+| Variable Name  | Description                                |
+|----------------|--------------------------------------------|
+| `MONGO_URI`    | MongoDB connection string                  |
+| `JWT_SECRET`   | Secret key for signing JWTs                |
+
+Example `.env` file:
+```plaintext
+MONGO_URI=mongodb+srv://username:password@cluster.mongodb.net/dbname?retryWrites=true&w=majority
+JWT_SECRET=your-secret-key
+
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 >>>>>>> b804938 (Initial Commit)
